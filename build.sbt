@@ -2,9 +2,11 @@ name := """twiliphone"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file("."))
+.enablePlugins(PlayScala)
+.enablePlugins(JavaAppPackaging)
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
   jdbc,
@@ -13,6 +15,3 @@ libraryDependencies ++= Seq(
   ws
 )
 
-packageArchetype.java_application
-
-root.enablePlugins(JavaAppPackaging)
