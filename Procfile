@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/twiliphone
+web: target/universal/stage/bin/twiliphone -Dhttp.port=${PORT}
