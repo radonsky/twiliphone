@@ -12,6 +12,7 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws
+  ws,
+  "com.twilio.sdk" % "twilio-java-sdk" % "4.0.0"
 )
 
